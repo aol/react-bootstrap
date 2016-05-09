@@ -191,7 +191,9 @@ const ComponentsPage = React.createClass({
         <div>
           <NavMain activePage="components" ref="topNav" />
 
-          <h1>Components</h1>
+          <PageHeader
+            title="Components"
+            subTitle="" />
           <div ref="main" className="container bs-docs-container">
             <div className="row">
               <div className="col-md-9" role="main">
