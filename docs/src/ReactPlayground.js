@@ -50,7 +50,6 @@ const NavDropdown = require('../../src/NavDropdown');
 const NavItem = require('../../src/NavItem');
 const Overlay = require('../../src/Overlay');
 const OverlayTrigger = require('../../src/OverlayTrigger');
-const PageHeader = require('../../src/PageHeader');
 const PageItem = require('../../src/PageItem');
 const Pager = require('../../src/Pager');
 const Pagination = require('../../src/Pagination');

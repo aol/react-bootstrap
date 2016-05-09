@@ -46,6 +46,5 @@ describe('Table', () => {
       <Table responsive />
     );
     assert.ok(ReactDOM.findDOMNode(instance).className.match(/\btable-responsive\b/));
-    assert.ok(ReactDOM.findDOMNode(instance).firstChild.className.match(/\btable\b/));
   });
 });

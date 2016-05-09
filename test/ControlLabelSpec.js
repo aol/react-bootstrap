@@ -15,7 +15,7 @@ describe('<ControlLabel>', () => {
         </ControlLabel>
       )
         .shallowRender()
-        .single('label.control-label.my-control-label[htmlFor="foo"]')
+        .single('label.form-control-label.my-control-label[htmlFor="foo"]')
           .text()
     ).to.equal('Label');
   });
@@ -27,7 +27,7 @@ describe('<ControlLabel>', () => {
       </ControlLabel>
     )
       .shallowRender()
-      .single('label.control-label.sr-only');
+      .single('label.form-control-label.sr-only');
   });
 
   it('should use controlId for htmlFor', () => {
@@ -37,7 +37,7 @@ describe('<ControlLabel>', () => {
       </FormGroup>
     )
       .render()
-      .single('label.control-label[htmlFor="foo"]');
+      .single('label.form-control-label[htmlFor="foo"]');
   });
 
   it('should prefer explicit htmlFor', () => {
@@ -51,6 +51,6 @@ describe('<ControlLabel>', () => {
       </FormGroup>
     )
       .render()
-      .single('label.control-label[htmlFor="bar"]');
+      .single('label.form-control-label[htmlFor="bar"]');
   });
 });

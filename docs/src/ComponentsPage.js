@@ -7,7 +7,6 @@ import NavItem from '../../src/NavItem';
 
 import Anchor from './Anchor';
 import NavMain from './NavMain';
-import PageHeader from './PageHeader';
 import PageFooter from './PageFooter';
 import SubNav from './SubNav';
 import AlertsSection from './sections/AlertsSection';
@@ -35,7 +34,6 @@ import ModalSection from './sections/ModalSection';
 import NavbarSection from './sections/NavbarSection';
 import NavSection from './sections/NavSection';
 import OverlaySection from './sections/OverlaySection';
-import PageHeaderSection from './sections/PageHeaderSection';
 import PagerSection from './sections/PagerSection';
 import PaginationSection from './sections/PaginationSection';
 import PanelSection from './sections/PanelSection';
@@ -71,7 +69,6 @@ const sections = {
   layout: '#page-layout',
     grid: '#grid',
     jumbotron: '#jumbotron',
-    pageHeader: '#page-header',
     listGroup: '#listgroup',
     tables: '#tables',
     panels: '#panels',
@@ -194,9 +191,7 @@ const ComponentsPage = React.createClass({
         <div>
           <NavMain activePage="components" ref="topNav" />
 
-          <PageHeader
-            title="Components"
-            subTitle="" />
+          <h1>Components</h1>
           <div ref="main" className="container bs-docs-container">
             <div className="row">
               <div className="col-md-9" role="main">
@@ -262,8 +257,6 @@ const ComponentsPage = React.createClass({
                 <GridSection />
                 {this.renderScrollSpy(sections.jumbotron)}
                 <JumbotronSection />
-                {this.renderScrollSpy(sections.pageHeader)}
-                <PageHeaderSection />
                 {this.renderScrollSpy(sections.listGroup)}
                 <ListGroupSection />
                 {this.renderScrollSpy(sections.tables)}
@@ -414,7 +407,6 @@ const ComponentsPage = React.createClass({
                       <SubNav href={sections.layout} text="Page layout">
                         <NavItem href={sections.grid}>Grid system</NavItem>
                         <NavItem href={sections.jumbotron}>Jumbotron</NavItem>
-                        <NavItem href={sections.pageHeader}>Page header</NavItem>
                         <NavItem href={sections.listGroup}>List group</NavItem>
                         <NavItem href={sections.tables}>Tables</NavItem>
                         <NavItem href={sections.panels}>Panels</NavItem>
