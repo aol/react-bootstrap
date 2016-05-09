@@ -58,4 +58,4 @@ ControlLabel.propTypes = propTypes;
 ControlLabel.defaultProps = defaultProps;
 ControlLabel.contextTypes = contextTypes;
 
-export default bsClass('control-label', ControlLabel);
+export default bsClass('form-control-label', ControlLabel);

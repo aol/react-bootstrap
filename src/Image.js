@@ -37,7 +37,7 @@ const Image = React.createClass({
 
   render() {
     const classes = {
-      'img-responsive': this.props.responsive,
+      'img-fluid': this.props.responsive,
       'img-rounded': this.props.rounded,
       'img-circle': this.props.circle,
       'img-thumbnail': this.props.thumbnail
