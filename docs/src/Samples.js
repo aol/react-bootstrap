@@ -71,7 +71,6 @@ export default {
   NavStacked:                    require('fs').readFileSync(__dirname + '/../examples/NavStacked.js', 'utf8'),
   Overlay:                       require('fs').readFileSync(__dirname + '/../examples/Overlay.js', 'utf8'),
   OverlayCustom:                 require('fs').readFileSync(__dirname + '/../examples/OverlayCustom.js', 'utf8'),
-  PageHeader:                    require('fs').readFileSync(__dirname + '/../examples/PageHeader.js', 'utf8'),
   PagerAligned:                  require('fs').readFileSync(__dirname + '/../examples/PagerAligned.js', 'utf8'),
   PagerDefault:                  require('fs').readFileSync(__dirname + '/../examples/PagerDefault.js', 'utf8'),
   PagerDisabled:                 require('fs').readFileSync(__dirname + '/../examples/PagerDisabled.js', 'utf8'),

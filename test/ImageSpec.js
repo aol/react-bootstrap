@@ -24,13 +24,13 @@ describe('Image', () => {
     assert.equal(image.getAttribute('alt'), 'this is alt');
   });
 
-  it('should have correct class when responsive prop is set', () => {
+  it('should have correct class when fluid prop is set', () => {
     let instance = ReactTestUtils.renderIntoDocument(
       <Image responsive />
     );
     let imageClassName = ReactDOM.findDOMNode(instance).className;
 
-    imageClassName.should.match(/\bimg-responsive\b/);
+    imageClassName.should.match(/\bimg-fluid\b/);
   });
 
   it('should have correct class when rounded prop is set', () => {

@@ -45,7 +45,6 @@ export NavDropdown from './NavDropdown';
 export NavItem from './NavItem';
 export Overlay from './Overlay';
 export OverlayTrigger from './OverlayTrigger';
-export PageHeader from './PageHeader';
 export PageItem from './PageItem';
 export Pager from './Pager';
 export Pagination from './Pagination';

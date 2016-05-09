@@ -7,7 +7,9 @@ const Table = React.createClass({
     bordered: React.PropTypes.bool,
     condensed: React.PropTypes.bool,
     hover: React.PropTypes.bool,
-    responsive: React.PropTypes.bool
+    responsive: React.PropTypes.bool,
+    inverse: React.PropTypes.bool,
+    reflow: React.PropTypes.bool,
   },
 
   getDefaultProps() {
@@ -16,7 +18,9 @@ const Table = React.createClass({
       condensed: false,
       hover: false,
       responsive: false,
-      striped: false
+      striped: false,
+      inverse: false,
+      reflow: false,
     };
   },
 
@@ -26,19 +30,16 @@ const Table = React.createClass({
       'table-striped': this.props.striped,
       'table-bordered': this.props.bordered,
       'table-condensed': this.props.condensed,
-      'table-hover': this.props.hover
+      'table-hover': this.props.hover,
+      'table-responsive': this.props.responsive,
+      'table-inverse': this.props.inverse,
+      'table-reflow': this.props.reflow,
     };
-    let table = (
+    return (
       <table {...this.props} className={classNames(this.props.className, classes)}>
         {this.props.children}
       </table>
     );
-
-    return this.props.responsive ? (
-      <div className="table-responsive">
-        {table}
-      </div>
-    ) : table;
   }
 });
 

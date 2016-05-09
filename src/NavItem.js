@@ -42,7 +42,7 @@ const NavItem = React.createClass({
     return (
       <li
         role="presentation"
-        className={classNames(className, { active, disabled })}
+        className={classNames('nav-link', className, { active, disabled })}
         style={style}
       >
         <SafeAnchor
